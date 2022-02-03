@@ -1,0 +1,216 @@
+:root{
+    --main-color: #323890;
+    --black: #000;
+    --white: #fff;
+    --light-color: #868e96;
+}
+
+section{padding: 0;}
+a{
+    color: #333;
+    text-decoration: none;
+}
+ul{margin: 0; padding: 0;}
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h3{
+    color: #123;
+    font-size: 56px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+h3 b{font-size: 32px;}
+h3 span{display: block;}
+mark{
+    margin: 0 -0.4em;
+    padding: 0.1em 0.4em;
+    border-radius: 0.8em 0.3em;
+    background: transparent;
+    background-image: linear-gradient(
+        to right,
+        rgba(5, 0, 53, 0.1),
+        rgba(17, 2, 228, 0.7) 4%,
+        rgba(72, 63, 145, 0.433)
+    );
+    color: #fff;
+    margin-right: .1rem;
+}
+.header{
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.header .logo {color: #333;}
+.header .logo span{color: var(--main-color);}
+
+.container section h3{margin-bottom: 1.5rem;}
+.decoBg{
+    margin: 35px 0 0;
+    height: 270px;
+    line-height: 270px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    background: url(/images/plus_bg_1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.decoBg .circleWrap{
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    top: 32%;
+    left: 50%;
+    margin-left: -175px;
+    z-index: 999999;
+}
+
+.decoBg .circleWrap .circle{
+    display: block;
+    float: left;
+    width: 110px;
+    height: 110px;
+    margin-right: 20px;
+    line-height: 110px;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(255,255,255,.6);
+    border-radius: 50%;
+    z-index: 999999;
+    font-weight: bold;
+}
+
+.decoBg .circleWrap .last{margin: 0;}
+
+.pluswrap{padding: 40px 0;}
+.pluswrap p{font-size: 18px;}
+.pluswrap .slgan{
+    color: #123;
+    line-height: 28px;
+    letter-spacing: 0;
+}
+
+.slogan{font-weight: bold;}
+
+/*---------------- about 영역-----------------*/
+
+.aboutPlus{
+    margin: 0 0;
+    padding: 100px 0;
+    overflow: hidden;
+}
+
+.aboutPlus .bgBox{
+    width: 100%;
+    height: 100%;
+    min-height: 720px;
+    background: #eee;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+}
+.aboutPlus .bgBox img{
+    position: absolute;
+    top: 25px;
+    width: 150px;
+}
+.aboutPlus .bg_ap1{
+    background: url(/images/plus_bg_2.jpg) no-repeat center center;
+    background-size: cover;
+    margin-left: 6%;
+}
+.aboutPlus .bgBox img .bg_ap1 img{right: 25px;}
+.textBox h3{
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+.aboutPlus .bg_ap2{
+    background: url(/images/plus_bg_3.jpg) no-repeat center center;
+    background-size: cover;
+    margin-right: -6%;
+    margin-top: -70px;
+}
+.aboutPlus .bgBox img .bg_ap2 img{left: 25px;}
+
+.aboutPlus .bg_ap3{
+    background: url(/images/plus_bg_5.jpg) no-repeat center center;
+    background-size: cover;
+    margin-left: 6%;
+}
+.aboutPlus .bgBox img .bg_ap1 img{right: 25px;}
+
+.aboutPlus .bg_ap4{
+    background: url(/images/plus_bg_4.jpg) no-repeat center center;
+    background-size: cover;
+    margin-right: -6%;
+    margin-top: -70px;
+}
+.aboutPlus .bgBox img .bg_ap2 img{left: 25px;}
+
+.textBox ul{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 30px 0;
+}
+.textBox li{
+    font-size: 16px;
+    list-style: disc;
+    margin: 10px 0 10px 25px;
+}
+.textBox li small{
+    color: #888;
+    display: block;
+}
+
+.quotes{
+    margin: 40px 0;
+    padding: 40px 47px 20px 60px;
+    position: relative;
+    font-size: 24px;
+    color: #123;
+}
+.quotes:before{
+    content: "\0022";
+    position: absolute;
+    top: 0; left: 0;
+    font-size: 90px;
+    font-style: italic;
+}
+.quotes .text_ap1{
+    padding-bottom: 40px;
+}
+
+@media all and (max-width:1024px) {
+    .aboutPlus .bgBox{min-height: 540px;}
+    .aboutPlus{padding: 80px 0;}
+    .bgBox{min-height: 540px;}
+    .bg_ap1, .bg_ap3{margin-left: 0;} 
+    .bg_ap2{margin-left: 0; margin-bottom: 80px;} 
+    .bg_ap4{margin-bottom: 80px;} 
+    .textBox li{font-size: 14px;}
+    .text_ap4 p{font-size: 16px}
+}
+
+
+
+
+
+
+
+
+
+
