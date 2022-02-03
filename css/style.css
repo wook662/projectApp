@@ -33,12 +33,6 @@ html{
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
 }
-html::-webkit-scrollbar{width: 1rem;}
-html::-webkit-scrollbar-track{background: #fafafa;}
-html::-webkit-scrollbar-thum{
-    background: var(--main-color);
-    border-radius: 5rem;
-}
 
 section{padding: 3rem 9%;}
 
