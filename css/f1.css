@@ -62,7 +62,7 @@ mark{
     text-align: center;
     width: 100%;
     position: relative;
-    background: url(/images/plus_bg_1.jpg) no-repeat center center fixed;
+    background: url(../images/plus_bg_1.jpg) no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -127,7 +127,7 @@ mark{
     width: 150px;
 }
 .aboutPlus .bg_ap1{
-    background: url(/images/plus_bg_2.jpg) no-repeat center center;
+    background: url(../images/plus_bg_2.jpg) no-repeat center center;
     background-size: cover;
     margin-left: 6%;
 }
@@ -139,7 +139,7 @@ mark{
 }
 
 .aboutPlus .bg_ap2{
-    background: url(/images/plus_bg_3.jpg) no-repeat center center;
+    background: url(../images/plus_bg_3.jpg) no-repeat center center;
     background-size: cover;
     margin-right: -6%;
     margin-top: -70px;
@@ -147,14 +147,14 @@ mark{
 .aboutPlus .bgBox img .bg_ap2 img{left: 25px;}
 
 .aboutPlus .bg_ap3{
-    background: url(/images/plus_bg_5.jpg) no-repeat center center;
+    background: url(../images/plus_bg_5.jpg) no-repeat center center;
     background-size: cover;
     margin-left: 6%;
 }
 .aboutPlus .bgBox img .bg_ap1 img{right: 25px;}
 
 .aboutPlus .bg_ap4{
-    background: url(/images/plus_bg_4.jpg) no-repeat center center;
+    background: url(../images/plus_bg_4.jpg) no-repeat center center;
     background-size: cover;
     margin-right: -6%;
     margin-top: -70px;
