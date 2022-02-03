@@ -14,13 +14,14 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    margin: 0; padding: 0;
+    margin: 0; 
+    padding: 0;
     box-sizing: border-box; 
     text-decoration: none;
     border: none;
     outline: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    transition: all 0.2s linear;
 }
 
 ::selection{
@@ -267,10 +268,13 @@ section{padding: 3rem 9%;}
 
 .schedule .box_container .box .icons span{
     display: block;
+    position: absolute;
     font-size: 1.5rem;
     color: #333;
     padding: .5rem 2rem;
 }
+.schedule .box_container .box .icons span:nth-child(1){top: 45%;}
+.schedule .box_container .box .icons span:nth-child(2){top: 60%;}
 .schedule .box_container .box .icons span:nth-child(2) i{
     width:30px;
 }
@@ -289,6 +293,7 @@ section{padding: 3rem 9%;}
     font-size: 1.3rem;
     line-height: 1.8;
     word-break: break-all;
+
 }
 
 .schedule .box_container .box img{
@@ -304,7 +309,7 @@ section{padding: 3rem 9%;}
 .schedule .box_container #box .schedule_btn{
     position: absolute;
     right: 3%;
-    bottom: 3%;
+    top: 76%;
 }
 
 .schedule_btn{
@@ -589,18 +594,19 @@ section{padding: 3rem 9%;}
 
     .schedule .box_container #box{
         position: relative;
-        height: 44.57vh;
+        height: 47.57vh;
     }
     .schedule .box_container #box .schedule_btn{
         position: absolute;
         right: 1%;
-        bottom: 1%;
+        top: 79%;
     }
     .schedule .box_container .box img{
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+
     .testimonial .box_container{
         padding: 1rem 0;
     }
@@ -620,6 +626,11 @@ section{padding: 3rem 9%;}
         gap: 1.5rem;
     }
 
+    .schedule .box_container .box .icons span:nth-child(1){top: 50%;}
+    .schedule .box_container .box .icons span:nth-child(2){top: 62%;}
+   .box_container #box:nth-child(7) img{
+    object-fit: initial;
+   }
 
 
 
