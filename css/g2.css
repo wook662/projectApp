@@ -10,6 +10,7 @@ a{
     color: #333;
     text-decoration: none;
 }
+a:hover{text-decoration: none !important;}
 ul{margin: 0; padding: 0;}
 li{
     margin: 0;
@@ -38,7 +39,6 @@ mark{
     color: #fff;
     margin-right: .1rem;
 }
-a:hover{text-decoration: none !important;}
 .header{
     position: static;
     top: 0;
@@ -50,49 +50,12 @@ a:hover{text-decoration: none !important;}
     align-items: center;
     justify-content: space-between;
     background: #fff;
-    z-index: 9999 !important;
 }
 
-.header .logo {color: #333; z-index: 9999;}
+.header .logo {color: #333;}
 .header .logo span{color: var(--main-color);}
+
 .container section h3{margin-bottom: 1.5rem;}
-.decoBg{
-    margin: 35px 0 0;
-    height: 270px;
-    line-height: 270px;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    background: url(../images/plus_bg_1.jpg) no-repeat center center fixed;
-    background-size: cover;
-}
-
-.decoBg .circleWrap{
-    position: absolute;
-    width: 100%;
-    max-width: 400px;
-    top: 32%;
-    left: 50%;
-    margin-left: -175px;
-    z-index: 999999;
-}
-
-.decoBg .circleWrap .circle{
-    display: block;
-    float: left;
-    width: 110px;
-    height: 110px;
-    margin-right: 20px;
-    line-height: 110px;
-    text-align: center;
-    font-size: 16px;
-    background: rgba(255,255,255,.6);
-    border-radius: 50%;
-    z-index: 999999;
-    font-weight: bold;
-}
-
-.decoBg .circleWrap .last{margin: 0;}
 
 .pluswrap{padding: 40px 0;}
 .pluswrap p{font-size: 18px;}
@@ -197,7 +160,6 @@ a:hover{text-decoration: none !important;}
 
 @media all and (max-width:1024px) {
     .header{position: fixed;}
-    .pluswrap{margin-top: 95px;}
     .aboutPlus .bgBox{min-height: 540px;}
     .aboutPlus{padding: 80px 0;}
     .bgBox{min-height: 540px;}
@@ -206,7 +168,30 @@ a:hover{text-decoration: none !important;}
     .bg_ap4{margin-bottom: 80px;} 
     .textBox li{font-size: 14px;}
     .text_ap4 p{font-size: 16px}
-    .navbar a{width: 100%;}
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        border-top: .1rem solid #eee;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        width: 100%;
+        display: block;
+        height: 20px;
+        line-height: 20px;
+        margin: 2rem;
+        font-size: 2rem;
+        color:#fff;
+        text-align: center;
+    }
 }
 
 

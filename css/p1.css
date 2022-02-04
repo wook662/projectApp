@@ -10,6 +10,9 @@ a{
     color: #333;
     text-decoration: none;
 }
+a:hover{text-decoration: none !important;}
+a.kProgram.box:hover{text-decoration: none;}
+
 ul{margin: 0; padding: 0;}
 li{
     margin: 0;
@@ -38,19 +41,177 @@ mark{
     color: #fff;
     margin-right: .1rem;
 }
+.header{
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3rem 9%;
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    z-index: 9999 !important;
+}
 
+.programAll{
+    padding: 40px 15px;
+    min-height: 880px;
 
+}
 
+.slogan{
+    color: #123;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 28px;
+}
 
+.prmPList li{padding-bottom: 30px;}
 
+.kProgram.box {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: block;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.kProgram .title{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.kProgram.box:hover{
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 35%);
+}
+.thumbHolder {
+    width: 100%;
+    padding-bottom: 60%;
+    background-color: #f5f5f5;
+    background-position: center 0;
+    background-size: cover;
+    position: relative;
+}
+.thumbHolder .tags {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.thumbHolder .tag {
+    background: #123;
+    color: #fff;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 11px;
+    padding: 5px 8px;
+}
+.thumbHolder .tag .sportsVoucherTag {
+    background:#3367CD;
+    margin: 0 3px;
+}
 
+.info{padding: 20px 25px 25px;}
+.info .category{
+    font-size: 11px;
+    font-weight: 600;
+    color: #888;
+    display: block;
+    margin: 0 0 3px;
+}
+.info .period{
+    font-size: 11px;
+    font-weight: 600;
+    color: #174C88;
+    display: block;
+    margin: 0 0 3px;
+}
+.info .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #123;
+    display: block;
+    margin: 5px 0 10px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+}
+.info .coach {
+    display: block;
+    margin: 10px 0 0;
+}
+.info .coach .coachPic {
+    width: 24px;
+    height: 24px;
+    background: #eee;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.info .coach .author {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888;
+}
 
+.kProgram .info .price{margin: 20px 0 0;}
+.kProgram .info .price del {
+    font-size: 12px;
+    color: #999;
+    text-decoration: line-through;
+}
+.kProgram .info .price i{
+    font-style: normal;
+    font-size: 18px;
+}
+.kProgram .info .price b {
+    font-size: 10px;
+    color: #E32438;
+    font-weight: 600;
+}
+.price strong {display: block; font-size:12px; color:#123;}
+.kProgram.box:hover .price strong{
+    color: var(--main-color);
+}
+.meta{
+    color: #888;
+    font-size: 11px;
+    letter-spacing: -0.5px;
+    margin-top: 5px;
+}
+.meta .remaiming{color: #7266d3;}
+.meta .remaiming i{
+    font-style: normal;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 4px;
+}
 
+.pagination {
+    margin: 60px 0 0;
+}
+.page-link {
+    color: #174c88;
+}
+.page-item.active .page-link {
+    background-color: #174c88;
+    border-color: #174c88;
+}
+.footer{margin-top: 100px;}
 
+.on_pt{
+    padding: 10px 0;
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 32px;
+}
 
 @media all and (max-width:1024px) {
-
-
+    .navbar a{width: 100%;}
+    .header{position: fixed;} 
+    .pClassList{margin-top: 85px;}
 
 
 
