@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "description" content=""/>
+    <meta name= "keywords" content=""/>
+    <meta name= "author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title></title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/m.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header class="header">
+    <div id="head_log">
+        <a href="">회원가입</a>
+        <a href="sub_m.html">로그인</a>
+    </div>
+    <a href="index.html" class="logo">Fit<span>Nezz</span></a>
+    <nav class="navbar">
+        <a href="sub_f1.html">Fitnezz</a>
+        <a href="sub_g2.html">이용가이드</a>
+        <a href="sub_p1.html">프로그램</a>
+        <a href="#">트레이너</a>
+        <a href="#">고객센터</a>
+    </nav>
+
+    <div class="icon">
+        <a href="#" class="btn">Fitnezz App</a>
+        <div id="menu_btn" class="fas fa-bars fa-3x"></div>
+    </div>
+    <a href="sub_m.html" class="user_icon">
+    <div id="user" class="fa fa-user fa-3x"></div>
+</a>
+</header>
+
+<div class="pluswrap">
+    <div class="container">
+
+        <div class="mypage profile">
+            <h2>라커룸</h2>
+
+                <nav>
+                    <div class="nav nav-pills mb-4" role="tablist">
+                        <a class="nav-item nav-link active" href="sub_m.html"><img src="images/ic_profile.svg" alt="#"> 프로필</a>
+                        <a class="nav-item nav-link" href="sub_o.html"><img src="images/ic_credit_card.svg" alt="#"> 결재내역</a>
+                    </div>
+                </nav>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>프로필</h4>
+                    <div class="userInfo">
+                    <div class="imgHolder">
+                        <span class="bgUserPicHolder" style="background-image: url(images/profile_default@3x.jpg);"></span>
+                    </div>
+                    <h5 class="name">김유저</h5>
+                    <a href="#">프로필 수정하기</a>
+                </div>
+
+                <div class="noonBody">
+                    <h4>Before / After</h4>
+                    <div class="row thumbsWrap">
+    
+                    </div>
+                        <a href="#" class="add">체형 변화 사진 모두 보기 </a>
+                </div>
+            </div> <!--col-->
+            
+            <div class="offset-md-1 col-md-5">
+                <div class="basicIndex">
+                    <h4>기본 지표</h4>
+                    <div class="indexList">
+                        <ul>
+
+                            <li>
+                                <a href="#">
+                                    <strong>성별</strong>
+                                    <i class="chev"><img src="images/ic_chev_right.svg"></i>
+                                    <span class="index">
+                                        <em>남성</em>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <strong>생년월일</strong>
+                                    <i class="chev"><img src="images/ic_chev_right.svg"></i>
+                                    <span class="index">
+                                        <em>1990-09-30</em>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <strong>키</strong>
+                                    <i class="chev"><img src="images/ic_chev_right.svg"></i>
+
+                                    <span class="index">
+                                        <b>167 cm</b>
+                                        <span class=""><small>1990.09.30</small> =0</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <strong>몸무게</strong>
+                                    <i class="chev"><img src="images/ic_chev_right.svg"></i>
+
+                                    <span class="index">
+                                        <b>75 kg</b>
+                                        <span class=""><small>1990.09.30</small> =0</span>
+                                    </span>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                        <button class="add btnShowAllIndex">지표 모두 보기 <i class="chev"><img src="images/ic_chev_right.svg"></i></button>
+
+                        <ul class="smartIndex">
+                            <li>
+                                <h6><img src="images/ic_scale.svg" alt="">from Atflee</h6>
+                            </li>
+                            <li class="empty">
+                                스마트 체성분 체중계 앳플리에서 측정한 지표 입니다. <br><br>
+                            </li>
+                        </ul>
+
+                        <div class="result">
+                            <h6><img src="images/ic_integration.svg" alt="#"> Physical Analysis</h6>
+                            <ul>
+
+                                <li class="empty">
+                                    기본 지표를 등록하면,<br>
+                                    AI 기반 Physical Analysis System의 분석에 따른 <br>
+                                    피지컬 지표 정보를 확인할 수 있습니다.
+                                </li>
+
+                                <li>
+                                    <small>체질량 지수(BMI)</small>
+                                    <span class="point">26<b class="unit text-danger">비만</b></span>
+                                </li>
+                                <li>
+                                    <small>표준체중</small>
+                                    <span class="point">70<b class="unit">kg</b></span>
+                                </li>
+                                <li>
+                                    <small>감량체중</small>
+                                    <span class="point">13<b class="unit ">kg</b></span>
+                                </li>
+                                <li>
+                                    <small>체지방률</small>
+                                    <span class="point">20<b class="unit ">%</b></span>
+                                </li>
+                                <li>
+                                    <small>감량 체지방률</small>
+                                    <span class="point">3<b class="unit ">%</b></span>
+                                </li>
+                                <li>
+                                    <small>기초대사량</small>
+                                    <span class="point">1888<b class="unit ">kcal</b></span>
+                                </li>
+                                <li>
+                                    <small>근육량</small>
+                                    <span class="point">48<b class="unit ">kg</b></span>
+                                </li>
+    
+                            </ul>
+                            <p class="lastUpdateDate">최근 업데이트 2022.02.22</p>
+                        </div>
+
+
+                    </div> <!--indexList-->
+                </div> <!--basicIndex-->
+
+                <div class="addiIndex">
+                    <h4>추가 지표</h4>
+                    <div class="indexList">
+                        <ul>
+
+                        </ul>
+                    </div>
+
+                    <button class="add" tyep="button" data-toggle="modal" data-target="addNewIndex">+ 새 지표 추가하기</button>
+
+                    <div class="modal addNew fade" id="addNewIndex" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">새 지표 추가하기</h5>
+
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="input-group">
+                                        <input id="inputAddValue" type="text" class="form-control" value="" placeholder="지표 이름을 입력하세요">
+                                        <select id="selectAddValue" class="custom-select">
+                                            <option selected>단위선택</option>
+                                            <option value="kg">kg</option>
+                                            <option value="cm">cm</option>
+                                            <option value="%">%</option>
+                                            <option value="g">g</option>
+                                            <option value="mm">mm</option>
+                                            <option value="L">L</option>
+                                        </select>
+                                    </div> <!--input-group-->
+                                </div> <!--modal-body-->
+
+                                <div class="modal-footer">
+                                    <button id="btnAdd" type="button" class="btn btnSubmit">추가하기</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!--addiIndex-->
+
+                <div class="inbody">
+                    <h4>인바디 사진</h4>
+                    <div class="indexList">
+                        <ul>
+
+                            <li>
+                                <a href="#">
+                                    <span class="imgBGHolder" style="background-image: url('images/blank_inbody@2x.jpg');"></span>
+                                    <i class="chev"><img src="images/ic_chev_right.svg"></i>
+                                    <small>인바디 결과지를 사진 찍어 등록하세요.</small>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="whyIndex">
+                    <b>왜 신체 지표 정보를 입력하나요?</b>
+                    <p>
+                        신체 지표를 입력하여 변화하는 내 몸을 기록하세요.<br>
+                        입력된 값은 코치에게만 전달됩니다.<br>
+                        코치는 입력된 지표를 확인하여 진행될 운동을 코치하고,<br>
+                        적절한 피드백을 드릴 수 있습니다.
+                    </p>
+                </div>
+
+            </div> <!--col-->
+        </div> <!--row-->
+    </div> <!--mypage profile-->
+</div> <!--container-->
+
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+    <div class="box_container">
+        <div class="box">
+            <h1>about</h1>
+            <div class="text">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <h1>contact info</h1>
+            <div class="icons">
+                <a href="#"><i class="fas fa-map-marker-alt"></i>주소</a>
+                <a href="#"><i class="fas fa-phone-alt"></i>연락처</a>
+                <a href="#"><i class="fas fa-envelope"></i>이메일</a>
+            </div>
+        </div>    
+        <div class="box">
+            <h1>quick links</h1>
+            <div class="icons">
+                <a href="sub_f1.html">Fitnezz</a>
+                <a href="sub_g2.html">이용가이드</a>
+                <a href="sub_p1.html">프로그램</a>
+                <a href="#">트레이너</a>
+                <a href="#">고객센터</a>
+            </div>
+        </div>   
+
+    </div>
+
+    <div class="credit">created by <span>Fintnezz</span> | all right reserved</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="./js/bootstrap.js"></script>
+<script>
+    var chk = 0;
+        $('.btnShowAllIndex').click(function(){
+            chk++;
+            var divchk = chk % 2;
+            if(divchk == 0){
+                $(this).next('ul').hide();
+            }else{
+                $(this).next('ul').show();
+            }
+        });
+</script>
+<script>
+
+</script>
+</body>
+</html>

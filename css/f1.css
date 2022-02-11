@@ -38,6 +38,7 @@ mark{
     color: #fff;
     margin-right: .1rem;
 }
+
 a:hover{text-decoration: none !important;}
 .header{
     position: static;
@@ -55,15 +56,73 @@ a:hover{text-decoration: none !important;}
 
 .header .logo {color: #333; z-index: 9999;}
 .header .logo span{color: var(--main-color);}
+.header .icon{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.header .icon div{
+    font-size: 2.5rem;
+    color: #222;
+    padding: .5rem;
+    cursor:pointer;
+    margin-left: 1rem;
+}
+
+.header .icon div:hover{
+    color: var(--main-color);
+}
+
+.header .icon a{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    color:#fff;
+    background: var(--main-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .8rem 2rem;
+    border: none;
+}
+
+.header .icon a:hover{
+    color: var(--main-color);
+    background: #fff;
+}
+
+#head_log{
+    width: 100%;
+    height: 10px;
+    position: relative;
+}   
+#head_log a{
+    height: 20px;
+    line-height: 20px;
+    display: inline;
+    position: absolute;
+    top: -0.3rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+}
+#head_log a:nth-child(1){right:1rem;}
+#head_log a:nth-child(2){
+    right: 6rem;
+    margin-right: 2%;
+}
+#head_log a:visited{color:#123;}
+#head_log a:hover{
+    font-weight: bold;
+    color:var(--main-color);
+}
+
 .container section h3{margin-bottom: 1.5rem;}
 .decoBg{
     margin: 35px 0 0;
-    height: 270px;
-    line-height: 270px;
+    height: 370px;
+    line-height: 370px;
     text-align: center;
     width: 100%;
     position: relative;
-    background: url(../images/plus_bg_1.jpg) no-repeat center center fixed;
+    background: url(../images/plus_bg_1.jpg) no-repeat center 45% fixed;
     background-size: cover;
 }
 
@@ -74,7 +133,7 @@ a:hover{text-decoration: none !important;}
     top: 32%;
     left: 50%;
     margin-left: -175px;
-    z-index: 999999;
+    z-index: 99;
 }
 
 .decoBg .circleWrap .circle{
@@ -194,10 +253,37 @@ a:hover{text-decoration: none !important;}
 .quotes .text_ap1{
     padding-bottom: 40px;
 }
+.user_icon{display: none;}
 
 @media all and (max-width:1024px) {
-    .header{position: fixed;}
-    .pluswrap{margin-top: 95px;}
+    .header .icon{order: 2;}
+    .header .logo{order: 1; margin-left:1.5%;}
+    .header #user{display:block; order: 0; color:#123;}
+    .header #user:hover{color:var(--main-color);}
+    .icon .btn{
+        position: absolute;
+        left: 8%;
+    }
+    html{font-size: 55%}
+    .header{padding:2rem;}
+    #menu_btn{display: inline-block;}
+
+    .navbar{padding: 0;}
+    
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+        color:#fff;
+        text-align: center;
+        z-index: 999999;
+    }
+    
+    #head_log{display:none;}
     .aboutPlus .bgBox{min-height: 540px;}
     .aboutPlus{padding: 80px 0;}
     .bgBox{min-height: 540px;}
@@ -207,6 +293,75 @@ a:hover{text-decoration: none !important;}
     .textBox li{font-size: 14px;}
     .text_ap4 p{font-size: 16px}
     .navbar a{width: 100%;}
+    .decoBg{
+        margin: 35px 0 0;
+        height: 270px;
+        line-height: 270px;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        background: url(../images/plus_bg_1.jpg) no-repeat center center fixed;
+        background-size: cover;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 3rem 9%;
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        z-index: 9999 !important;
+    }
+    .header .icon{order: 2;}
+    .header .logo{order: 1; margin-left:1.5%;}
+    .header #user{display:block; order: 0; cursor: pointer;}
+    .icon .btn{
+        position: absolute;
+        left: 8%;
+    }
+    html{font-size: 55%}
+    .header{padding:2rem;}
+    #menu_btn{display: inline-block;}
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        border-top: .1rem solid #eee;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .navbar a{
+        display: block;
+        margin: 1rem;
+        font-size: 2rem;
+        color:#fff;
+        text-align: center;
+    }
+    
+    #head_log{display:none;}
+    .pluswrap{margin-top: 80px;}
+    #user{color: #123;}
+    #user:hover{color: var(--main-color);}
+    .user_icon{display: block;}
+
+
+
+
+
+
+
+
+
 }
 
 

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "description" content=""/>
+    <meta name= "keywords" content=""/>
+    <meta name= "author" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <title></title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <link href="./css/o.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="./css/bootstrap.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<header class="header">
+    <div id="head_log">
+        <a href="">회원가입</a>
+        <a href="sub_m.html">로그인</a>
+    </div>
+    <a href="index.html" class="logo">Fit<span>Nezz</span></a>
+    <nav class="navbar">
+        <a href="sub_f1.html">Fitnezz</a>
+        <a href="sub_g2.html">이용가이드</a>
+        <a href="sub_p1.html">프로그램</a>
+        <a href="#">트레이너</a>
+        <a href="#">고객센터</a>
+    </nav>
+
+    <div class="icon">
+        <a href="#" class="btn">Fitnezz App</a>
+        <div id="menu_btn" class="fas fa-bars fa-3x"></div>
+    </div>
+    <a href="sub_m.html" class="user_icon">
+    <div id="user" class="fa fa-user fa-3x"></div>
+    </a>
+</header>
+
+<div class="pluswrap">
+    <div class="container">
+
+        <div class="mypage paymentList">
+            <h2>라커룸</h2>
+
+                <nav>
+                    <div class="nav nav-pills mb-4" role="tablist">
+                        <a class="nav-item nav-link " href="sub_m.html"><img src="images/ic_profile.svg" alt="#"> 프로필</a>
+                        <a class="nav-item nav-link active" href="sub_o.html"><img src="images/ic_credit_card.svg" alt="#"> 결재내역</a>
+                    </div>
+                </nav>
+
+                <h4>온라인 PT 프로그램 구매내역</h4>
+                <ul class="list-group font_margin">
+                    <li class="hasNo">
+                        <p>구매 내역이 없습니다.</p>
+                    </li>
+                </ul>
+
+                <h4 id="font_h4">스포츠 강좌 프로그램 구매내역</h4>
+                <div class="datatable table-responsive mb-5">
+                    <table class="table table-bordered bodycodiSalesHistoty">
+                        <thead>
+                            <tr>
+                                <th>결재 일시</th>
+                                <th>프로그램</th>
+                                <th>상태</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="3">
+                                    <div class="hasNo">
+                                        <p>구매 내역이 없습니다.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4 id="margin_top">환불내역</h4>
+                <ul class="list-group">
+                    <li class="hasNo">
+                        <p>환불 내역이 없습니다.</p>
+                    </li>
+
+                </ul>
+
+
+        </div> <!--mypage profile-->
+    </div> <!--container-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+    <div class="box_container">
+        <div class="box">
+            <h1>about</h1>
+            <div class="text">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+            </div>
+            <div class="icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <h1>contact info</h1>
+            <div class="icons">
+                <a href="#"><i class="fas fa-map-marker-alt"></i>주소</a>
+                <a href="#"><i class="fas fa-phone-alt"></i>연락처</a>
+                <a href="#"><i class="fas fa-envelope"></i>이메일</a>
+            </div>
+        </div>    
+        <div class="box">
+            <h1>quick links</h1>
+            <div class="icons">
+                <a href="sub_f1.html">Fitnezz</a>
+                <a href="sub_g2.html">이용가이드</a>
+                <a href="sub_p1.html">프로그램</a>
+                <a href="#">트레이너</a>
+                <a href="#">고객센터</a>
+            </div>
+        </div>   
+
+    </div>
+
+    <div class="credit">created by <span>Fintnezz</span> | all right reserved</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="./js/bootstrap.js"></script>
+<script>
+    var chk = 0;
+        $('.btnShowAllIndex').click(function(){
+            chk++;
+            var divchk = chk % 2;
+            if(divchk == 0){
+                $(this).next('ul').hide();
+            }else{
+                $(this).next('ul').show();
+            }
+        });
+</script>
+<script>
+
+</script>
+</body>
+</html>

@@ -55,6 +55,8 @@ mark{
     z-index: 9999 !important;
 }
 
+#head_log{height: 10px;}
+
 .programAll{
     padding: 40px 15px;
     min-height: 880px;
@@ -213,7 +215,40 @@ mark{
     .header{position: fixed;} 
     .pClassList{margin-top: 85px;}
 
+    .header #menu_btn{order: 2;}
+    .header .logo{order: 1; margin-left:7%;}
+    .header #user{display:block; order: -1; cursor: pointer;}
+    .icon .btn{
+        position: absolute;
+        left: 8%;
+    }
+    html{font-size: 55%}
+    .header{padding:2rem;}
+    #menu_btn{display: inline-block;}
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+        border-top: .1rem solid #eee;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    .header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
 
+    .header .navbar a{
+        display: block;
+        margin: 1rem;
+        font-size: 2rem;
+        color:#fff;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #head_log{display:none;}
 
 }
 

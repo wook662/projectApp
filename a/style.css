@@ -79,14 +79,17 @@ section{padding: 3rem 9%;}
     position: absolute;
     top: -0.3rem;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size:1.3rem;
 }
 #head_log a:nth-child(1){right:1rem;}
 #head_log a:nth-child(2){
-    right: 6rem;
+    right:6rem;
     margin-right: 2%;
 }
-#head_log a:visited{color:#123;}
+#head_log a{text-decoration:none;}
+#head_log a:link{color:#666;}
+#head_log a:visited{color:#666;}
+
 #head_log a:hover{
     font-weight: bold;
     color:var(--main-color);
@@ -156,7 +159,6 @@ section{padding: 3rem 9%;}
 #menu_btn, #user{
     display: none;
 }
-.user_icon{display: none;}
 
 /*----------------------header end---------------------*/
 
@@ -538,7 +540,8 @@ section{padding: 3rem 9%;}
 @media all and (max-width:1024px){
     .header .icon{order: 2;}
     .header .logo{order: 1; margin-left:1.5%;}
-    .header #user{display:block; order: 0; cursor: pointer;}
+    .header #user{display:block; order: 0; color:#123;}
+    .header #user:hover{color:var(--main-color);}
     .icon .btn{
         position: absolute;
         left: 8%;
@@ -631,12 +634,9 @@ section{padding: 3rem 9%;}
 
     .schedule .box_container .box .icons span:nth-child(1){top: 50%;}
     .schedule .box_container .box .icons span:nth-child(2){top: 62%;}
-    .box_container #box:nth-child(7) img{
+   .box_container #box:nth-child(7) img{
     object-fit: initial;
-    }
-    .user_icon{display: block;}
-    #user{color: #123;}
-    #user:hover{color: var(--main-color);}
+   }
 
 
 

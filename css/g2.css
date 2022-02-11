@@ -39,6 +39,10 @@ mark{
     color: #fff;
     margin-right: .1rem;
 }
+#head_log{   
+    width: 100%;
+    height: 10px;
+    position: relative;}
 .header{
     position: static;
     top: 0;
@@ -67,6 +71,31 @@ mark{
 
 .slogan{font-weight: bold;}
 
+.container section:nth-child(1) {
+    display: flex;
+    margin-bottom: 60px;
+    height: 20px;
+}
+.container section:nth-child(1) a{
+    color: #555;
+    font-size: 14px;
+    line-height: 14px;
+}
+.container section:nth-child(1) a:hover{
+    color: #123;
+    font-weight: bold;
+}
+.container section:nth-child(1) span{
+    margin: 0 15px;
+    height: 20px;
+    line-height: 20px;
+}
+.container section:nth-child(2) span{
+    color: var(--main-color);
+    display: inline;
+}
+
+
 /*---------------- about 영역-----------------*/
 
 .aboutPlus{
@@ -91,7 +120,7 @@ mark{
     width: 150px;
 }
 .aboutPlus .bg_ap1{
-    background: url(../images/plus_bg_2.jpg) no-repeat center center;
+    background: url(../images/img00.png) no-repeat center center;
     background-size: cover;
     margin-left: 6%;
 }
@@ -103,63 +132,71 @@ mark{
 }
 
 .aboutPlus .bg_ap2{
-    background: url(../images/plus_bg_3.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../images/img01.png) no-repeat center center;
+    background-size: unset;
     margin-right: -6%;
-    margin-top: -70px;
 }
 .aboutPlus .bgBox img .bg_ap2 img{left: 25px;}
 
 .aboutPlus .bg_ap3{
-    background: url(../images/plus_bg_5.jpg) no-repeat center center;
-    background-size: cover;
+    background: url(../images/img02.png) no-repeat center center;
+    background-size: unset;
     margin-left: 6%;
 }
 .aboutPlus .bgBox img .bg_ap1 img{right: 25px;}
 
 .aboutPlus .bg_ap4{
-    background: url(../images/plus_bg_4.jpg) no-repeat center center;
+    background: url() no-repeat center center;
     background-size: cover;
     margin-right: -6%;
-    margin-top: -70px;
 }
 .aboutPlus .bgBox img .bg_ap2 img{left: 25px;}
 
+.textBox {padding-top: 10%;}
+.textBox h3{line-height: 1.5;}
+.textBox p{
+    color: #123;
+    font-size: 18px;
+    line-height: 2;
+}
+.textBox span{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: bold;
+}
 .textBox ul{
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 30px 0;
 }
 .textBox li{
-    font-size: 16px;
-    list-style: disc;
-    margin: 10px 0 10px 25px;
+    font-size: 20px;
+    list-style: circle;
+    font-weight: bold;
+    margin: 15px 0 10px 35px;
 }
 .textBox li small{
     color: #888;
     display: block;
 }
+.bfont .font{font-size: 16px; margin-top: 30px;}
 
-.quotes{
-    margin: 40px 0;
-    padding: 40px 47px 20px 60px;
-    position: relative;
-    font-size: 24px;
-    color: #123;
-}
-.quotes:before{
-    content: "\0022";
+.page-item{
     position: absolute;
-    top: 0; left: 0;
-    font-size: 90px;
-    font-style: italic;
+    right: 16%;
 }
-.quotes .text_ap1{
-    padding-bottom: 40px;
+.page-item .page-link{font-size: 24px;}
+.page-item .page-link:hover{
+    color: #fff;
+    font-weight: bold;
+    background-color: var(--main-color);
 }
+.pagination-lg{font-size: 24px;}
 
+.footer{margin-top: 100px;}
 @media all and (max-width:1024px) {
     .header{position: fixed;}
+    .pluswrap{margin-top: 90px;}
     .aboutPlus .bgBox{min-height: 540px;}
     .aboutPlus{padding: 80px 0;}
     .bgBox{min-height: 540px;}
@@ -168,6 +205,16 @@ mark{
     .bg_ap4{margin-bottom: 80px;} 
     .textBox li{font-size: 14px;}
     .text_ap4 p{font-size: 16px}
+    .header .icon{order: 2;}
+    .header .logo{order: 1; margin-left:1.5%;}
+    .header #user{display:block; order: 0; cursor: pointer;}
+    .icon .btn{
+        position: absolute;
+        left: 8%;
+    }
+    html{font-size: 55%}
+    .header{padding:2rem;}
+    #menu_btn{display: inline-block;}
     .header .navbar{
         position: absolute;
         top: 100%;
@@ -183,15 +230,31 @@ mark{
     }
 
     .header .navbar a{
-        width: 100%;
         display: block;
-        height: 20px;
-        line-height: 20px;
-        margin: 2rem;
+        margin: 1rem;
         font-size: 2rem;
         color:#fff;
         text-align: center;
+        width: 100%;
     }
+    
+    #head_log{display:none;}
+    .textBox p{ font-size: 16px;}
+
+    .aboutPlus .bg_ap2{
+        background: url(../images/img01.png) no-repeat center 36%;
+        background-size: unset;
+        margin-right: -6%;
+    }
+
+    .aboutPlus .bg_ap3{
+        background: url(../images/img02.png) no-repeat center 90%;
+        background-size: unset;
+        margin-left: 6%;
+    }
+    .page-item{right: 50%;}
+    .container section:nth-child(2) h3{text-align: center;}
+    .textBox li{font-size: 18px;}
 }
 
 
