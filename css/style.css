@@ -327,11 +327,14 @@ section{padding: 3rem 9%;}
     right: 3%;
     top: 76%;
 }
-.box_container .box{overflow: hidden;}
+.box_scale{overflow: hidden;}
 .box_container .box:nth-child(2) img:hover,
 .box_container .box:nth-child(4) img:hover,
 .box_container .box:nth-child(5) img:hover,
 .box_container .box:nth-child(7) img:hover{transform: scale(1.1);}
+
+
+
 /*----------------------schedule end---------------------*/
 
 .trainers .trainers_slider{padding-bottom: 4rem;}
@@ -642,12 +645,7 @@ section{padding: 3rem 9%;}
     .schedule .box_container{
         grid-template-columns: repeat(auto-fit, minmax(50%,1fr));
     }
-    .box_container .box{overflow: hidden;}
     .box_container .box:nth-child(1){order:1;}
-    .box_container .box:nth-child(2) img:hover,
-    .box_container .box:nth-child(4) img:hover,
-    .box_container .box:nth-child(5) img:hover,
-    .box_container .box:nth-child(7) img:hover{transform: scale(1.1);}
     .box_container .box:nth-child(2){order:0;}
     .box_container .box:nth-child(4){order:3;}
     .box_container .box:nth-child(3){order:2;}
@@ -655,6 +653,7 @@ section{padding: 3rem 9%;}
     .box_container .box:nth-child(6){order:5;}
     .box_container .box:nth-child(8){order:6;}
     .box_container .box:nth-child(7){order:7;}
+
     .user_icon{display: block;}
 
     #user{color: #123;}
