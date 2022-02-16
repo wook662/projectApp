@@ -28,7 +28,7 @@
     background: var(--main-color);
     color:#fff;
 }
-a:link{color: #123;}
+
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -80,6 +80,7 @@ section{padding: 3rem 9%;}
     top: -0.3rem;
     cursor: pointer;
     font-size: 1.3rem;
+    color: #123;
 }
 #head_log a:nth-child(1){right:1rem;}
 #head_log a:nth-child(2){
